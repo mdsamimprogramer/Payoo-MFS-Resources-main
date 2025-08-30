@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login Page</title>
+
+    <link rel="shortcut icon" href="dom-related-project/assets/Group.png" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="bg-[#f3f4f6] h-[100vh] flex flex-col justify-center items-center">
-    <div class="h-[130px] w-[300px] bg-[url('./assets/bg.png')] bg-cover flex justify-center items-center">
-        <img src="assets/Group.png" alt="">
-    </div>
+<body class="bg-[#F4F4F4] h-[100vh] flex flex-col justify-center items-center">
+    <!-- img -->
+        <div class="h-[130px] bg-cover w-[350px] imges flex items-center justify-center bg-[url(dom-related-project/assets/bg.png)]">
+            <img src="dom-related-project/assets/Group.png" alt="">
+        </div>
 
-    <form class="bg-white rounded-2xl p-8 w-[350px]">
-        <div>
-            <label class="font-semibold" for="">Mobile Number</label>
-            <br>
-            <input id="mobile-num" type="text" placeholder="Enter Mobile Number" class="input bg-[#f4f5f7] mt-3 rounded-2xl" />
-        </div>
-        <div class="mt-5">
-            <label class="font-semibold" for="">4 Digit Pin</label>
-            <br>
-            <input id="pin-num" type="text" placeholder="Enter 4 Digit Pin" class="input bg-[#f4f5f7] mt-3 rounded-2xl" />
-        </div>
-        <button id="loginbtn" type="button" class="btn bg-[#0874F2] font-bold mt-5 w-full rounded-3xl text-white">Login</button>
+    <!-- form -->
+    <form action="#" class="bg-white flex flex-col [&>label]:m-3 [&>label]:mb-6 mx-auto p-6 [&>input]:bg-[#F4F4F4] rounded-2xl [&>input]:rounded-2xl [&>input]:p-3 [&>input]:w-full text-black [&>button]:font-semibold [&>button]:text-lg [&>button]:mt-6 [&>label]:font-semibold [&>label]:text-lg max-w-[450px] w-full" >
+        <label for="Mobile Number">Mobile Number</label>
+        <input type="number" name="Mobile Number" id="MobileNumber" placeholder="Mobile Number" maxlength="11" required>
+        <label for="4 digit pin">4 digit pin</label>
+        <input type="number" name="4 digit pin" id="4digitpin" placeholder="4 digit pin" maxlength="4" required >
+        <button type="submit" id="login" class="btn btn-primary rounded-3xl bg-blue-600">Login</button>
     </form>
-
-
-    <!-- js cript.js -->
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
